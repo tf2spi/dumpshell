@@ -1,0 +1,4 @@
+vuln/aee_aed filter=lfs diff=lfs merge=lfs -text
+vuln/aee_aedv filter=lfs diff=lfs merge=lfs -text
+vuln/aee-commit filter=lfs diff=lfs merge=lfs -text
+vuln/aee-config filter=lfs diff=lfs merge=lfs -text
