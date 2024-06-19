@@ -4,7 +4,7 @@
 
 ## Requirements
 
-* Vulnerable ``aee_aed`` in ``vuln/`` installed on the device  
+* Vulnerable ``aee_aed`` in ``vuln/`` installed on the device
 * ``python``
 * ``zig`` (``0.12.0-dev.789+e6590fea1`` at the time of this writing)
 * ``adb``
@@ -35,7 +35,7 @@ Run ``pwn.py`` with the name of the package which replaces the ``shell`` context
 
 The exploit should spawn a shell in a few seconds.
 ```
-# id 
+# id
 uid=0(root) gid=0(root) groups=0(root),1000(system),1001(radio),1007(log),1032(package_info),1045(debuggerd),3009(readproc) context=u:r:crash_dump:s0
 ```
 
@@ -191,3 +191,8 @@ I have looked at other versions of ``aee_aed`` and I have seen the same vulnerab
 those as well, even the stack canary leak and worker log statement, as coincidental as that may be.
 In general, it's better to assume that the version of ``aee_aed`` you have is vulnerable.
 
+## Fix
+
+MediaTek has assigned `CVE-2024-20032` to this vulnerability.
+
+`CVE-2024-20032` has already been fixed by MediaTek and was published as part of the [March 2024 MediaTek Security Bulletin](https://corp.mediatek.com/product-security-bulletin/March-2024).
